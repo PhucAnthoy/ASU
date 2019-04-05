@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NU ASU | Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- jQuery -->
+<!--start slider-->
+	<link href="css/camera.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery.min.js"></script>
+    <script type='text/javascript' src="js/jquery.mobile.customized.min.js"></script>
+    <script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
+    <script type='text/javascript' src="js/camera.min.js"></script>
+    <script>
+		jQuery(function(){
+
+			jQuery('#camera_wrap_2').camera({
+
+				loader: 'bar',
+				pagination: false,
+				thumbnails: true
+			});
+		});
+	</script>
+<!--end slider-->
+<!--start gallery-->
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+
+		var filterList = {
+
+			init: function () {
+
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#gallerylist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});
+
+			},
+
+			hoverEffect: function () {
+
+				// Simple parallax effect
+				$('#gallerylist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+					}
+				);
+
+			}
+
+		};
+
+		// Run the show!
+		filterList.init();
+
+
+	});
+	</script>
+<!--Add fancyBox main JS and CSS files-->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+
+
+</head>
+<body>
+<!--star-wrap-->
+	    <div class="wrap">
+	    	<!--header-->
+	      		<div class="header">
+	      				<!--start-logo-->
+				          <div class="logo">
+				             <a href="index.html"><h1>nu<span>asu</span></h1></a>
+				          </div>
+				        <!--end-logo-->
+	      	 			<!--start-menu-->
+					  	<div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt= " " /></a>
+							<ul class="nav">
+								<li class="active"><a href="index.html">home</a></li>
+								<li><a href="about.html">about</a></li>
+								<li><a href="eboard.html">eboard</a></li>
+								<li><a href="calendar.html">calendar</a></li>
+								<li><a href="minis.html">minis</a></li>
+                				<li><a href="assassins.html">assassins</a></li>
+								<li><a target="_blank" href="https://www.facebook.com/NUASU/photos_stream?tab=photos_albums">photos</a></li>
+								<li><a href="paac.html">paac</a></li>
+								<li><a href="contact.html">contact</a></li>
+							<div class="clear"> </div>
+						    </ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				        </div>
+				        <div class="clear"> </div>
+						<!--end-menu-->
+
+				</div>
+				</div>
+		  <!--end-header-->
+<!--end wrap-->
+
+<!-- start slider -->
+<div class="main-con">
+	<div class="slider">
+		<div class="color"> <span> </span></div>
+		<div class="wrap">
+		<div class="fluid_container">
+        <div class="camera_wrap camera_magenta_skin" id="camera_wrap_2">
+
+            <div data-thumb="images/light_the_night.jpg" data-src="images/light_the_night.jpg">
+                <div class="camera_caption fadeFromBottom">
+                  <h2 class="lowercase-font">ASU & BKD Host Light the Night 2017!</h2>
+                   <p>Curry Student Center AfterHOURS</p>
+                </div>
+            </div>
+
+            <div data-thumb="images/kayaking.jpg" data-src="images/kayaking.jpg">
+                <div class="camera_caption fadeFromBottom">
+                  <h2 class="lowercase-font">ASU Goes Kayaking!</h2>
+                   <p>Charles River</p>
+                </div>
+            </div>
+
+            <div data-thumb="images/home/dimsum_2016.jpg" data-src="images/field_day.jpg">
+                <div class="camera_caption fadeFromBottom">
+                  <h2 class="lowercase-font">Field Day 2017!</h2>
+                   <p>Snell Classroom</p>
+                </div>
+            </div>
+
+            <div class="test" data-thumb="images/picnicking.jpg" data-src="images/picnicking.jpg">
+                <div class="camera_caption fadeFromBottom">
+                  <h2 class="lowercase-font">ASU Goes Picnicking!</h2>
+                   <p>Boston Commons</p>
+                </div>
+            </div>
+
+			<div class="home-thumb" data-thumb="images/dim_sum.jpg" data-src="images/dim_sum.jpg">
+                <div class="camera_caption fadeFromBottom">
+                  <h2 class="lowercase-font">ASU Goes to Dim Sum!</h2>
+                   <p>China Pearl</p>
+                </div>
+            </div>
+
+            <div data-thumb="images/a_night_with.jpg" data-src="images/a_night_with.jpg">
+                <div class="camera_caption fadeFromBottom">
+                  <h2 class="lowercase-font">ASU Brings in David So!</h2>
+                   <p>Curry Student Center AfterHOURS</p>
+                </div>
+            </div>
+
+            <div data-thumb="images/minis_new.jpg" data-src="images/minis_new.jpg">
+                <div class="camera_caption fadeFromBottom">
+                  <h2 class="lowercase-font">Minis Kickoff 2017!</h2>
+                   <p>Curry Student Center</p>
+                </div>
+            </div>
+
+        </div><!-- #camera_wrap_2 -->
+    </div><!-- .fluid_container -->
+    <div class="clear"></div>
+	</div>
+</div>
+<!--end slider-->
+
+<h1 class="lowercase-font center-title"> Hi there. </h1>
+<h2 class="center-description"> Welcome to Northeastern's Asian Student Union! </h2>
+<!--start footer-->
+<div class="footer">
+  <div class="footer-main wrap">
+  <div class="footer-grids">
+    <div class="fgrid">
+      <h3 class="footer-title">about asu</h3>
+      <p>Asian Student Union (ASU) is a cultural group on campus at Northeastern University in Boston, Massachusetts. </p>
+      <p>Through general meetings and events, we seek to promote awareness of Asian American culture while making friends and have fun along the way!</p>
+    </div>
+    <div class="fgrid">
+      <h3 class="footer-title">activity stream</h3>
+       <div>
+        <a class="twitter-timeline" href="https://twitter.com/nuASU" data-widget-id="534012216362561536">Tweets by @nuASU</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+
+    </div>
+    <div class="fgrid">
+      <h3 class="footer-title">contact us</h3>
+      <p>We hold general meetings every other Wednesday during the school year at 6:00pm in 346 Curry, and we also frequently organize fun events on the weekend! Come on by :)</p>
+      <a href="#"><p>NUASU.Eboard@gmail.com</p></a>
+        <div class="social-media">
+           <ul>
+               <li> <span class="simptip-position-bottom simptip-movable" data-tooltip="Facebook"><a target="_blank" href="https://www.facebook.com/NUASU"> </a></span></li>
+              <li><span class="simptip-position-bottom simptip-movable" data-tooltip="twitter"><a target="_blank" href="http://www.twitter.com/nuasu"> </a> </span></li>
+              <li><span class="simptip-position-bottom simptip-movable" data-tooltip="email"><a target="_blank" href="mailto:NUASU.Eboard@gmail.com"> </a></span></li>
+              <li><span class="youtube-icon simptip-position-bottom simptip-movable" data-tooltip="youtube"><a target="_blank" href="http://www.youtube.com/nuasu"> </a></span></li>
+        </ul>
+    </div>
+    </div>
+    <div class="clear"> </div>
+  </div>
+</div>
+</div>
+<!--end footer-->
+<div class="copy-right">
+  <div class="wrap">
+    <div class="copy-right-left">
+      <p class="lowercase-font">Designed by <a href="http://www.kyang.io">Kevin Yang</a></p>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

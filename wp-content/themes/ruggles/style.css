@@ -1,0 +1,468 @@
+/*
+ Theme Name: Ruggles
+ Theme URI: http://presscustomizr.com/hueman/
+ Template: hueman
+ Version: 1.0.3
+ Description: Child theme for Hueman.
+ Author: nikeo (Hueman)
+ Author URI: http://presscustomizr.com
+ Tags: light,
+one-column,
+two-columns,
+three-columns,
+right-sidebar,
+left-sidebar,
+fluid-layout,
+fixed-layout,
+responsive-layout,
+custom-colors,
+custom-menu,
+featured-images,
+flexible-header,
+full-width-template,
+post-formats,
+sticky-post,
+theme-options,
+threaded-comments,
+translation-ready
+ Text Domain: hueman
+ Copyright: (c) 2015-2016 Nicolas GUILLAUME (nikeo),
+2013-2015 Alexander "Alx" Agnarson
+ License: GNU General Public License v3.0
+ License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/*******************************************************************
+ *  DEFAULT NEU STYLES                                             *
+ *	Override these by activating Dynamic Styles in the Customizer: *
+ *	Customizer > Global Settings > General Design Settings         *
+ ******************************************************************/
+
+	/* Primary Color */
+
+	::selection { background-color: #c00 !important; }
+	::-moz-selection { background-color: #c00 !important; }
+
+	a,
+	.themeform label .required,
+	#flexslider-featured .flex-direction-nav .flex-next:hover,
+	#flexslider-featured .flex-direction-nav .flex-prev:hover,
+	.post-hover:hover .post-title a,
+	.post-title a:hover,
+	.s1 .post-nav li a:hover i,
+	.content .post-nav li a:hover i,
+	.post-related a:hover,
+	.s1 .widget_rss ul li a,
+	#footer .widget_rss ul li a,
+	.s1 .widget_calendar a,
+	#footer .widget_calendar a,
+	.s1 .alx-tab .tab-item-category a,
+	.s1 .alx-posts .post-item-category a,
+	.s1 .alx-tab li:hover .tab-item-title a,
+	.s1 .alx-tab li:hover .tab-item-comment a,
+	.s1 .alx-posts li:hover .post-item-title a,
+	#footer .alx-tab .tab-item-category a,
+	#footer .alx-posts .post-item-category a,
+	#footer .alx-tab li:hover .tab-item-title a,
+	#footer .alx-tab li:hover .tab-item-comment a,
+	#footer .alx-posts li:hover .post-item-title a,
+	.comment-tabs li.active a,
+	.comment-awaiting-moderation,
+	.child-menu a:hover,
+	.child-menu .current_page_item > a,
+	.wp-pagenavi a {
+		color: #c00;
+	}
+
+	.themeform input[type="submit"],
+	.themeform button[type="submit"],
+	.s1 .sidebar-top,
+	.s1 .sidebar-toggle,
+	#flexslider-featured .flex-control-nav li a.flex-active,
+	.post-tags a:hover,
+	.s1 .widget_calendar caption,
+	#footer .widget_calendar caption,
+	.author-bio .bio-avatar:after,
+	.commentlist li.bypostauthor > .comment-body:after,
+	.commentlist li.comment-author-admin > .comment-body:after {
+		background-color: #c00 !important;
+	}
+
+	.post-format .format-container { border-color: #c00 !important; }
+
+	.s1 .alx-tabs-nav li.active a,
+	#footer .alx-tabs-nav li.active a,
+	.comment-tabs li.active a,
+	.wp-pagenavi a:hover,
+	.wp-pagenavi a:active,
+	.wp-pagenavi span.current {
+		border-bottom-color: #c00!important;
+	}
+
+	/* Secondary Color */
+
+	.s2 .post-nav li a:hover i,
+	.s2 .widget_rss ul li a,
+	.s2 .widget_calendar a,
+	.s2 .alx-tab .tab-item-category a,
+	.s2 .alx-posts .post-item-category a,
+	.s2 .alx-tab li:hover .tab-item-title a,
+	.s2 .alx-tab li:hover .tab-item-comment a,
+	.s2 .alx-posts li:hover .post-item-title a {
+		color: #c00;
+	}
+
+	.s2 .sidebar-top,
+	.s2 .sidebar-toggle,
+	.post-comments,
+	.jp-play-bar,
+	.jp-volume-bar-value,
+	.s2 .widget_calendar caption {
+		background-color: #c00 !important;
+	}
+
+	.s2 .alx-tabs-nav li.active a { border-bottom-color: #c00 !important; }
+	.post-comments span:before { border-right-color: #c00 ; }
+
+	/* Body Background */
+
+	body{
+		background-color: #fafafa !important;
+	}
+
+	/* Topbar Background */
+
+	.search-expand,
+	#nav-topbar.nav-container { background-color: #353535 !important; }
+	@media only screen and (min-width: 720px) {
+	  #nav-topbar .nav ul {
+	  	background-color: #353535 !important;
+	  }
+	}
+
+	/* Header Background */
+	#nav-mobile{background-color: #353535 !important}
+	#header { background-color: #fff !important; }
+	@media only screen and (min-width: 720px) {
+	  #nav-header .nav ul {
+	  	background-color: #fff !important;
+	  }
+	}
+
+	/* Header Menu Background */
+
+	#nav-header.nav-container { background-color: #353535 !important; }
+	@media only screen and (min-width: 720px) {
+	  #nav-header .nav ul {
+	  	background-color: #353535 !important;
+	  }
+	}
+/* END DEFAULT RUGGLES STYLES */
+
+body{
+	color: #333;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	font-size:100%;
+}
+h1{font-size:1.875rem;}
+h2{font-size:1.75rem;}
+h3{font-size:1.625rem;}
+h4{font-size:1.5rem;}
+h5{font-size:1.375rem;}
+h6{font-size:1.25rem;}
+
+ul.children{
+	padding-left:15px;
+}
+.boxed #wrapper{
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.entry{
+    line-height: 1.75rem;
+    font-size: 1rem;
+}
+.entry li{
+	margin: 20px 0;
+}
+.entry code{
+	background-color:#ddd;
+	padding: 5px 4px;
+}
+.entry code,
+.entry pre{
+	font-family:"Courier New", Courier, monospace;
+	font-size:1rem;
+}
+.entry.excerpt{
+	color:#666;
+}
+.page-image{
+	margin:0;
+}
+.page-title h1,
+.page-title h2,
+.page-title h4{
+	color:#c00;
+}
+.post-list .page,
+.post-list .post{
+	width:100%;
+}
+.site-description{
+	clear:both;
+	color: #615445;
+	padding:0;
+	margin:0;
+	font-size:1.4rem;
+	font-family: "Times New Roman", serif;
+	line-height:inherit;
+	font-style:italic;
+}
+.textwidget a {
+	text-decoration:underline;
+}
+.toggle-search{
+	padding:22px 20px 10px;
+	line-height:18px;
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+.widget,
+.widget a{
+	color:#333;
+}
+.widget a:hover,
+.widget>h3 a,
+.widget>h3 a:hover{
+	color:#c00;
+}
+footer{
+	clear:both;
+	z-index:99;
+	letter-spacing:0.03em;
+	font-size:11px;
+	font-family:Arial, Verdana, Sans-serif!important;
+}
+#footer-bottom .pad{
+		padding:30px 30px 30px 20px;
+}
+#footer-bottom #back-to-top{
+	color:#c00;
+	float:right;
+	margin:10px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+}
+#header-widgets{
+	max-width:60%;
+}
+#nav-topbar .nav>li{
+	float:right;
+	font-size: 15px;
+}
+#nav-topbar .nav li>a{
+	color:#fff;
+}
+#nav-topbar .nav li>a:hover{
+	background-color:rgba(0,0,0,0.2);
+}
+
+/* NEU UNIVERSAL FOOTER */
+	#neu-footer {
+	    height: 60px;
+	    padding: 20px 0px;
+	    background-color:#636363;
+	    color:#fff;
+	}
+	#neu-footer a,
+	#neu-footer a:visited{
+		color:#fff;
+	}
+	#neu-footer a.neu-logo{
+	    background: url("../../themes/ruggles/images/logo-footer.png") no-repeat scroll left top transparent;
+	    background-size:contain;
+	    float: left;
+	    height: 17px;
+	    margin-left: 20px;
+	    padding: 0;
+	    width: 173px;
+	}
+	#neu-footer .contact{
+		clear: both;
+	    font-size: 100%;
+	    line-height: 1.4em;
+	    height: auto;
+	    margin: 0 0 0 363px;
+	    padding: 0;
+	}
+	#neu-footer .info{
+	    display: inline;
+	    float: left;
+	    font-size: 12px;
+	    list-style-type: none;
+	    margin: 0 0 10px 170px;
+	    color: #CCC;
+	}
+	#neu-footer .info li {
+	    float: left;
+	    margin-right: 10px;
+	}
+	#neu-footer .wrapper{
+		height:30px;
+		margin:0 auto;
+	}
+	@media only screen and (max-width:767px){
+		#neu-footer{
+			height: 265px;
+			margin-top:0;
+		}
+		#neu-footer .contact{
+			margin: 20px 0 20px 20px;
+		}
+		#neu-footer .info{
+			clear: left;
+		    float: left;
+		    font-size: 10px;
+		    margin: 3px 0 0 20px;
+		    width: 50%;
+		}
+		#neu-footer .info li{
+			float:none;
+			margin-right:0;
+			padding: 2px;
+		}
+	}
+	@media only screen and (max-width: 767px) and (min-width: 480px){
+		#neu-footer{
+		    width: 100%;
+		    height: 133px;
+		    margin: 0 auto;
+		    font-size: 10px;
+		    text-align: left;
+		    vertical-align: middle;
+		}
+		#neu-footer a.neu-logo{
+			font-size: 14px;
+		    margin-right: 20px;
+		    padding: 0;
+		    text-decoration: none;
+		}
+		#neu-footer .contact{
+			margin-left: 20px;
+		}
+		#neu-footer .info{
+		    clear: left;
+		    width: 82%;
+		    font-size: 9px;
+		    margin-top: 3px;
+		    margin-left: 20px;
+		}
+		#neu-footer .info li{
+			float:left;
+			margin-right:4px;
+			padding:2px 0;
+		}
+		#neu-footer .wrapper{
+			padding: 5px 20px;
+			width:87.5%;
+			max-width:440px;
+		}
+	}
+	@media only screen and (max-width: 991px) and (min-width: 768px){
+		#neu-footer {
+		    font-size: 10px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    text-align: left;
+		    vertical-align: middle;
+		    width:100%;
+		    height: 85px;
+	    }
+	    #neu-footer a.neu-logo {
+		    font-size: 14px;
+		    margin-right: 20px;
+		    padding: 0;
+		    text-decoration: none
+		}
+	    #neu-footer .contact {
+	    	margin-left: 283px;
+	    }
+		#neu-footer .info{
+		    font-size: 9px;
+	    	padding-top: 5px;
+	    	margin-left: 90px;
+		}
+		#neu-footer .info li {
+	    	margin-right: 5px;
+	    }
+	    #neu-footer .wrapper{
+	        max-width: 728px;
+	    	padding: 0 20px;
+	    	width: 728px;
+	    }
+	}
+/* END UNIVERSAL FOOTER */
+
+
+/* GENERAL MEDIA QUERIES */
+@media only screen and (max-width: 960px) and (min-width: 480px){
+	.s1-expand .s1 {
+		width:50%;
+	}
+}
+@media only screen and (min-width: 720px){
+	.nav>li>a {
+	    padding: 10px 14px;
+	}
+	.nav ul{
+		top:40px;
+	}
+	#nav-topbar .nav>li:first-child{
+		margin-right:59px;
+	}
+}
+@media only screen and (max-width: 719px){
+	.nav ul li a{
+		padding: 12px 0 12px 20px;
+	}
+	.site-description{
+		display:block;
+		font-size:1.1rem!important;
+		padding: 0 0 30px 0;
+	}
+	.site-title{
+		width:initial;
+		float:left;
+		padding: 30px 0 10px 0;
+	}
+	#nav-topbar .nav>li{
+		float: left;
+		width: 100%;
+    }
+
+}
+@media only screen and (max-width: 479px){
+	.nav li a{
+		padding: 20px 10px;
+	}
+	.sidebar {
+	    background: #f0f0f0;
+	    width: 100%;
+	    display: block;
+	    float: none;
+	}
+	#nav-topbar .nav>li:first-child{
+		margin-right:0;
+	}
+}
+@media only print{
+	.main-inner{
+		padding-left: 0;
+	}
+	.nav-container,
+	.sidebar{
+		display:none;
+	}
+}
